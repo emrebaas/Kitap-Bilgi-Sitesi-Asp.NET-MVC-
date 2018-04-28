@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <link href="~/Content/css/AnaSayfaStyle.css" rel="stylesheet" />
+
+</head>
+<body>
+
+
+    <div id="ustcontainer">
+
+        <div class="logosol">
+
+        </div>
+
+        <div class="menuiki">
+
+            <ul class="ul">
+
+                <li class="li">
+                    <p class="ucboyutlu">
+
+                        <a href="@Url.Action("Index","Home")">Ana Sayfa</a>
+                    </p>
+                </li>
+
+                <li class="li">
+                    <p class="ucboyutlu">
+
+                        <a href="@Url.Action("Index","Hakkimizda")">Hakkımızda</a>
+                    </p>
+                </li>
+
+                <li class="li">
+                    <p class="ucboyutlu">
+
+                        <a href="@Url.Action("Login","Uye")">Giriş</a>
+                    </p>
+                </li>
+
+                <li class="li">
+                    <p class="ucboyutlu">
+
+                        <a href="@Url.Action("Create","Uye")">Yeni Kayıt</a>
+                    </p>
+                </li>
+
+
+
+            </ul>
+
+        </div>
+
+
+
+
+    </div>
+
+
+    <div id="altcontainer">
+
+        <div class="icerikust">
+
+        </div>
+
+        <div class="icerikkategori" style="height:40px;">
+            <table align="center" width="1000" height="40">
+                <tr>
+                    <td style="border-radius:45px; border:2px solid #0b1842 ; background-color:white; color:#0b1842; text-align:center;">Bilim</td>
+                    <td style="border-radius:45px; border:2px solid #0b1842 ; background-color:white; color:#0b1842; text-align:center;">Felsefe</td>
+                    <td style="border-radius:45px; border:2px solid #0b1842 ; background-color:white; color:#0b1842; text-align:center;">Din - Mitoloji</td>
+
+                    <td style="border-radius:45px; border:2px solid #0b1842 ; background-color:white; color:#0b1842; text-align:center;">Çoçuk-Genç</td>
+                    <td style="border-radius:45px; border:2px solid #0b1842 ; background-color:white; color:#0b1842; text-align:center;">Edebiyat</td>
+                    <td style="border-radius:45px; border:2px solid #0b1842 ; background-color:white; color:#0b1842; text-align:center;">Tarih</td>
+                </tr>
+            </table>
+        </div>
+
+
+
+        <div class="icerik" style="background-color:gray;">
+            <div class="kb" style="background-color:#0b1842; color:white; text-align:center; font-size:25px;">
+                @ViewBag.Title
+            </div>
+
+
+            <div class="bilgi" style="border:1px solid #0b1842; background-color:white; height:500px; width:998px; ">
+
+                <h1>Burada Hakkımızda Gelecek</h1>
+
+            </div>
+        </div>
+
+
+        <div class="altalan">
+            @RenderBody()
+        </div>
+    </div>
+
+
+</body>
+</html>

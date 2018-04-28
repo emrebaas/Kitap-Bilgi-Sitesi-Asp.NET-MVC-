@@ -1,0 +1,67 @@
+﻿@model WebApplication5.Models.Kullanici
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/giriskayit.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Kullanici</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Yetki.yetki_adi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Yetki.yetki_adi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.kullanici_adi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kullanici_adi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.kul_sifre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kul_sifre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.kul_isim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kul_isim)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.kul_soyisim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kul_soyisim)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.kul_mail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kul_mail)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.kul_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

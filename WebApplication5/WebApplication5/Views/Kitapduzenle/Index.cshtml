@@ -1,0 +1,75 @@
+﻿@model IEnumerable<WebApplication5.Models.Kitap>
+
+@{
+    ViewBag.Title = "aDMİN";
+    Layout = "~/Views/Shared/kitapekle.cshtml";
+}
+
+
+<p>
+    @Html.ActionLink("Yeni Kitap Ekle", "Create")
+</p>
+<table class="table" width="500">
+    <tr>
+        <th>
+            <h4>Kategori</h4>
+        </th>
+        <th>
+            <h4>Yükleyen</h4>
+        </th>
+        <th>
+            <h4>Resim</h4>
+        </th>
+        <th>
+            <h4>Kitap Adı</h4>
+        </th>
+        <th>
+            <h4>Yazar</h4>
+        </th>
+        <th>
+            <h4>Yayın Evi</h4>
+        </th>
+        <th style="height:auto; width:100px;">
+            <h4>Özet</h4>
+        </th>
+        <th >
+            <h4>İçerik</h4>
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Kategori.kategori_adi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Kullanici.kullanici_adi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Kitap_resim)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.kitap_adi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.kitap_yazar)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.kitap_yayinevi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.kitap_ozet)
+        </td>
+        <td width="100px;">
+            @Html.DisplayFor(modelItem => item.kitap_icerik)
+        </td>
+        <td>
+            @Html.ActionLink("Düzenle", "Edit", new { id=item.kitap_id }) |
+            @Html.ActionLink("İncele", "Details", new { id=item.kitap_id }) |
+            @Html.ActionLink("Sil", "Delete", new { id=item.kitap_id })
+        </td>
+    </tr>
+}
+
+</table>

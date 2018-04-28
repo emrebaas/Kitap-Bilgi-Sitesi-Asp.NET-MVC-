@@ -1,0 +1,68 @@
+﻿@model WebApplication5.Models.Kitap
+
+@{
+    ViewBag.Title = "Kitap Ekle";
+    Layout = "~/Views/Shared/kitapekle.cshtml";
+}
+
+
+@using (Html.BeginForm("Create", "Kitapduzenle", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+
+
+    <table style="width:500px; margin:auto; color:darkblue; font-size:22px; margin-top:40px; height:300px;">
+        <tr>
+            <td>Kitap Resim</td>
+            <td>
+                <input type="file" name="image" id="image" />
+            @Html.ValidationMessageFor(model => model.Kitap_resim, "", new { @class = "text-danger" })</td>
+        </tr>
+
+        <tr>
+            <td>Kitap Adı:</td>
+            <td>@Html.EditorFor(model => model.kitap_adi, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.kitap_adi, "", new { @class = "text-danger" })</td>
+        </tr>
+
+        <tr>
+            <td>Kitap Yazar:</td>
+            <td>@Html.EditorFor(model => model.kitap_yazar, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.kitap_yazar, "", new { @class = "text-danger" })</td>
+        </tr>
+
+        <tr>
+            <td>Kitap Yayınevi:</td>
+            <td>@Html.EditorFor(model => model.kitap_yayinevi, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.kitap_yayinevi, "", new { @class = "text-danger" })</td>
+        </tr>
+
+        <tr>
+            <td>Kitap Kısa Bilgi:</td>
+            <td>@Html.EditorFor(model => model.kitap_ozet, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.kitap_ozet, "", new { @class = "text-danger" })</td>
+        </tr>
+
+        <tr>
+            <td>Kitap Açıklama:</td>
+            <td>@Html.EditorFor(model => model.kitap_icerik, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.kitap_icerik, "", new { @class = "text-danger" })</td>
+        </tr>
+
+        <tr>
+            <td>Kitap Kategorisi:</td>
+            <td>
+                @Html.DropDownList("kitap_kategori_id", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.kitap_kategori_id, "", new { @class = "text-danger" })</td>
+        </tr>
+
+
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Kaydet" class="btn btn-default" style="background-color:#0b1842; width:100px; margin-top:15px; float:right; height:30px; color:white; text-align:center;" /></td>
+    </tr>
+    </table>
+
+    
+}

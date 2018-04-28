@@ -1,0 +1,440 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/AnaSayfaStyle.css" rel="stylesheet" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <link rel="stylesheet" type="text/css" href="sliderjs/amazingslider-1.css">
+
+
+    <script src="~/sliderjs/jquery.js"></script>
+    <script src="~/sliderjs/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="~/sliderjs/amazingslider-1.css">
+    <script src="~/sliderjs/initslider-1.js"></script>
+
+</head>
+<body>
+    <div id="ustcontainer">
+
+              <div class="logosol">
+
+              </div>
+
+              <div class="menuiki">
+                  
+                  <ul class="ul">
+
+                      <li class="li">
+                          <p class="ucboyutlu">
+                              
+                              <a href="@Url.Action("Index","Home")">Ana Sayfa</a>
+                          </p>
+                      </li>
+
+                      <li class="li">
+                          <p class="ucboyutlu">
+                              
+                              <a href="@Url.Action("Index","Hakkimizda")">Hakkımızda</a>
+                          </p>
+                      </li>
+
+                      <li class="li">
+                          <p class="ucboyutlu">
+                             
+                              <a href="@Url.Action("Login","Uye")">Giriş</a>
+                          </p>
+                      </li>
+
+                      <li class="li">
+                          <p class="ucboyutlu">
+                              
+                              <a href="@Url.Action("Create","Uye")">Yeni Kayıt</a>
+                          </p>
+                      </li>
+
+
+
+                  </ul>
+                  
+              </div>
+
+        
+
+    </div>
+
+    <div id="ortacontainer">
+
+        <div class="slider">
+
+            <div id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:1140px;margin:0px auto 56px;">
+                <div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+                    <ul class="amazingslider-slides" style="display:none;">
+                        <li>
+                            <img src="/Content/img/slayt1.png" />
+                        </li>
+                        <li>
+                            <img src="/Content/img/slayt2.png" />
+                        </li>
+                        <li>
+                            <img src="/Content/img/slayt3.png" />
+                        </li>
+                        <li>
+                            <img src="/Content/img/slayt4.png" />
+                        </li>
+                        <li>
+                            <img src="/Content/img/slayt5.jpg" />
+                        </li>
+                        <li>
+                            <img src="/Content/img/slayt6.jpg" />
+                        </li>
+                        <li>
+                            <img src="/Content/img/slayt7.jpg" />
+                        </li>
+                    </ul>
+                    <ul class="amazingslider-thumbnails" style="display:none;">
+                        <li><img src="/Content/img/slayt1-tn.png" /></li>
+                        <li><img src="/Content/img/slayt2-tn.png" /></li>
+                        <li><img src="/Content/img/slayt3-tn.png" /></li>
+                        <li><img src="/Content/img/slayt4-tn.png" /></li>
+                        <li><img src="/Content/img/slayt5-tn.jpg" /></li>
+                        <li><img src="/Content/img/slayt6-tn.jpg" /></li>
+                        <li><img src="/Content/img/slayt7-tn.jpg" /></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="altcontainer">
+
+
+
+                <div class="icerikkategori">
+
+                    <table align="center" width="1000" height="40">
+                        <tr>
+                            <td style="border-radius:45px; border:2px solid #0b1842 ; background-color:white; color:#0b1842; text-align:center;">Bilim</td>
+                            <td style="border-radius:45px; border:2px solid #0b1842 ; background-color:white; color:#0b1842; text-align:center;">Felsefe</td>                            
+                            <td style="border-radius:45px; border:2px solid #0b1842 ; background-color:white; color:#0b1842; text-align:center;">Din - Mitoloji</td>
+
+                            <td style="border-radius:45px; border:2px solid #0b1842 ; background-color:white; color:#0b1842; text-align:center;">Çoçuk-Genç</td>
+                            <td style="border-radius:45px; border:2px solid #0b1842 ; background-color:white; color:#0b1842; text-align:center;">Edebiyat</td>
+                            <td style="border-radius:45px; border:2px solid #0b1842 ; background-color:white; color:#0b1842; text-align:center;">Tarih</td>
+                        </tr>
+                    </table>
+                   
+                </div>
+
+                <div class="icerik">
+                   
+                        <div class="kb">
+                             <h4 class="h4">Bilim</h4>
+                        </div>
+
+                        <div class="ki">
+
+                            <table cellspacing="30" align="center" >
+                                <tr>
+                                    <td align="center">
+                                        <img src="~/Content/img/arkaplanlar/1.jpg" width="125" height="160" />
+                                         
+                                    </td>
+                                    <td align="center">
+
+                                        <img src="~/Content/img/arkaplanlar/2.jpg" width="125" height="160" />
+                                                                                                                       
+                                    </td>
+                                    <td align="center">
+
+                                        <img src="~/Content/img/arkaplanlar/3.jpg" width="125" height="160" />
+                                        
+
+                                    </td>
+                                    <td align="center">
+                                        <img src="~/Content/img/arkaplanlar/4.jpg" width="125" height="160" />
+                                      
+                                    </td>
+                                    <td align="center">
+                                        <img src="~/Content/img/arkaplanlar/5.jpg" width="125" height="160" />
+                                        
+                                    </td>
+                                    
+                                    <td align="center">
+                                        <img src="~/Content/img/arkaplanlar/6.jpg" width="125" height="160" />
+                                      
+                                    </td>
+                                </tr>
+                 
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td height="20" align="right">Tümünü Gör</td>
+                                </tr>
+                            </table>
+
+                        </div>
+
+
+                        <div class="kb">
+                        <h4 class="h4">Çocuk-Genç</h4>
+                    </div>
+                     
+                            <div class="ki">
+                        <table cellspacing="30" align="center">
+                            <tr>
+                                <td align="center">
+                                    <img src="~/Content/img/arkaplanlar/7.jpg" width="125" height="160" />
+
+                                </td>
+                                <td align="center">
+
+                                    <img src="~/Content/img/arkaplanlar/8.jpg" width="125" height="160" />
+
+                                </td>
+                                <td align="center">
+
+                                    <img src="~/Content/img/arkaplanlar/9.jpg" width="125" height="160" />
+
+
+                                </td>
+                                <td align="center">
+                                    <img src="~/Content/img/arkaplanlar/10.jpg" width="125" height="160" />
+
+                                </td>
+                                <td align="center">
+                                    <img src="~/Content/img/arkaplanlar/11.jpg" width="125" height="160" />
+
+                                </td>
+
+                                <td align="center">
+                                    <img src="~/Content/img/arkaplanlar/12.jpg" width="125" height="160" />
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td height="20" align="right">Tümünü Gör</td>
+                            </tr>
+                        </table>
+                    </div>
+
+
+                    <div class="kb">
+                        <h4 class="h4">Din-Mitoloji</h4>
+                    </div>
+
+                    <div class="ki">
+                        <table cellspacing="30"  align="center">
+                            <tr>
+                                <td align="center">
+                                    <img src="~/Content/img/arkaplanlar/13.jpg" width="125" height="160" />
+
+                                </td>
+                                <td align="center">
+
+                                    <img src="~/Content/img/arkaplanlar/14.jpg" width="125" height="160" />
+
+                                </td>
+                                <td align="center">
+
+                                    <img src="~/Content/img/arkaplanlar/15.jpg" width="125" height="160" />
+
+
+                                </td>
+                                <td align="center">
+                                    <img src="~/Content/img/arkaplanlar/16.jpg" width="125" height="160" />
+
+                                </td>
+                                <td align="center">
+                                    <img src="~/Content/img/arkaplanlar/17.jpg" width="125" height="160" />
+
+                                </td>
+
+                                <td align="center">
+                                    <img src="~/Content/img/arkaplanlar/18.jpg" width="125" height="160" />
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td height="20" align="right">Tümünü Gör</td>
+                            </tr>
+                        </table>
+                    </div>
+
+
+                    <div class="kb">
+                        <h4 class="h4">Edebiyat</h4>
+
+                    </div>
+
+                    
+
+                    <div class="ki">
+                        <table cellspacing="30" align="center">
+                            <tr>
+                                <td align="center">
+                                    <img src="~/Content/img/arkaplanlar/19.jpg" width="125" height="160" />
+
+                                </td>
+                                <td align="center">
+
+                                    <img src="~/Content/img/arkaplanlar/20.jpg" width="125" height="160" />
+
+                                </td>
+                                <td align="center">
+
+                                    <img src="~/Content/img/arkaplanlar/21.jpg" width="125" height="160" />
+
+
+                                </td>
+                                <td align="center">
+                                    <img src="~/Content/img/arkaplanlar/22.jpg" width="125" height="160" />
+
+                                </td>
+                                <td align="center">
+                                    <img src="~/Content/img/arkaplanlar/23.jpg" width="125" height="160" />
+
+                                </td>
+
+                                <td align="center">
+                                    <img src="~/Content/img/arkaplanlar/24.jpg" width="125" height="160" />
+
+                                </td>
+                            </tr>
+                            
+                            <tr><td></td><td></td><td></td><td></td><td></td>
+                            <td height="20" align="right">Tümünü Gör</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="kb">
+                        <h4 class="h4">Felsefe</h4>
+
+                    </div>
+
+                
+
+                    <div class="ki">
+                        <table cellspacing="30"  align="center">
+                            <tr>
+                                <td align="center">
+                                    <img src="~/Content/img/arkaplanlar/25.jpg" width="125" height="160" />
+
+                                </td>
+                                <td align="center">
+
+                                    <img src="~/Content/img/arkaplanlar/26.jpg" width="125" height="160" />
+
+                                </td>
+                                <td align="center">
+
+                                    <img src="~/Content/img/arkaplanlar/27.jpg" width="125" height="160" />
+
+
+                                </td>
+                                <td align="center">
+                                    <img src="~/Content/img/arkaplanlar/28.jpg" width="125" height="160" />
+
+                                </td>
+                                <td align="center">
+                                    <img src="~/Content/img/arkaplanlar/29.jpg" width="125" height="160" />
+
+                                </td>
+
+                                <td align="center">
+                                    <img src="~/Content/img/arkaplanlar/30.jpg" width="125" height="160" />
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td height="20" align="right">Tümünü Gör</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="kb">
+                        <h4 class="h4">Tarih</h4>
+
+                    </div>
+
+                    <div class="ks">
+                        <table cellspacing="30"  align="center">
+                            <tr>
+                                <td align="center">
+                                    <img src="~/Content/img/arkaplanlar/31.jpg" width="125" height="160" />
+
+                                </td>
+                                <td align="center">
+
+                                    <img src="~/Content/img/arkaplanlar/32.jpg" width="125" height="160" />
+
+                                </td>
+                                <td align="center">
+
+                                    <img src="~/Content/img/arkaplanlar/33.jpg" width="125" height="160" />
+
+
+                                </td>
+                                <td align="center">
+                                    <img src="~/Content/img/arkaplanlar/34.jpg" width="125" height="160" />
+
+                                </td>
+                                <td align="center">
+                                    <img src="~/Content/img/arkaplanlar/35.jpg" width="125" height="160" />
+
+                                </td>
+
+                                <td align="center">
+                                    <img src="~/Content/img/arkaplanlar/36.jpg" width="125" height="160" />
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td height="20" align="right">Tümünü Gör</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                   
+                </div>
+
+
+                <div class="altalan">
+                    @RenderBody()
+                </div>
+    </div>
+        
+       
+</body>
+</html>

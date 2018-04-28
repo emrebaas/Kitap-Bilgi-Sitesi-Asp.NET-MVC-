@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/AnaSayfaStyle.css" rel="stylesheet" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <link rel="stylesheet" type="text/css" href="sliderjs/amazingslider-1.css">
+
+
+    <script src="~/sliderjs/jquery.js"></script>
+    <script src="~/sliderjs/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="~/sliderjs/amazingslider-1.css">
+    <script src="~/sliderjs/initslider-1.js"></script>
+
+</head>
+<body>
+    <div id="ustcontainer">
+
+        <div class="logosol">
+
+        </div>
+
+        <div class="menuiki">
+
+            <ul class="ul">
+
+                <li class="li">
+                    <p class="ucboyutlu">
+
+                        <a href="@Url.Action("Index","KayitliAnasayfa")">Ana Sayfa</a>
+                    </p>
+                </li>
+
+             
+                <li class="li">
+                    <p class="ucboyutlu">
+
+                        <a href="@Url.Action("Index", "Kitapduzenle")">Kitap</a>
+                    </p>
+                </li>
+
+                <li class="li">
+                    <p class="ucboyutlu">
+
+                        <a href="@Url.Action("Index", "Uyeduzenle")">Üyeler</a>
+                    </p>
+                </li>
+                
+
+                <li class="li">
+                    <p class="ucboyutlu">
+
+                        <a href="@Url.Action("Logout","Uye")">Çıkış</a>
+                    </p>
+                </li>
+
+
+
+            </ul>
+
+        </div>
+
+
+
+    </div>
+
+    <div id="altcontainer">
+
+        <div class="icerikust">
+
+        </div>
+
+        <div class="icerikkategori" style="height:40px;">
+            <table align="center" width="1000" height="40">
+                <tr>
+                    <td style="border-radius:45px; border:2px solid #0b1842 ; background-color:white; color:#0b1842; text-align:center;">Bilim</td>
+                    <td style="border-radius:45px; border:2px solid #0b1842 ; background-color:white; color:#0b1842; text-align:center;">Felsefe</td>
+                    <td style="border-radius:45px; border:2px solid #0b1842 ; background-color:white; color:#0b1842; text-align:center;">Din - Mitoloji</td>
+
+                    <td style="border-radius:45px; border:2px solid #0b1842 ; background-color:white; color:#0b1842; text-align:center;">Çoçuk-Genç</td>
+                    <td style="border-radius:45px; border:2px solid #0b1842 ; background-color:white; color:#0b1842; text-align:center;">Edebiyat</td>
+                    <td style="border-radius:45px; border:2px solid #0b1842 ; background-color:white; color:#0b1842; text-align:center;">Tarih</td>
+                </tr>
+            </table>
+        </div>
+
+
+
+        <div class="icerik" style="background-color:gray;">
+            <div class="kb" style="background-color:#0b1842; color:white; text-align:center; font-size:25px;">
+
+            </div>
+            <div class="bilgi" style="border:1px solid #0b1842; background-color:white; height:auto; width:998px; ">
+
+
+                <div class="girisbolum" style="margin-right:50px; margin-top:50px; margin-left:50px;">
+
+                    <div class="kb" style="background-color:#0b1842;width:798px; color:white; text-align:center; font-size:25px;">
+                        @ViewBag.Title
+                    </div>
+
+                    @RenderBody()
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div class="altalan">
+
+        </div>
+    </div>
+
+</body>
+</html>

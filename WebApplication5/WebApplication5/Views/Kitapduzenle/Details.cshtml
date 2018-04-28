@@ -1,0 +1,83 @@
+﻿@model WebApplication5.Models.Kitap
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/kitapekle.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Kitap</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Kategori.kategori_adi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kategori.kategori_adi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Kullanici.kullanici_adi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kullanici.kullanici_adi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Kitap_resim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kitap_resim)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.kitap_adi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kitap_adi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.kitap_yazar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kitap_yazar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.kitap_yayinevi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kitap_yayinevi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.kitap_ozet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kitap_ozet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.kitap_icerik)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kitap_icerik)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.kitap_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,67 @@
+﻿@model WebApplication5.Models.Kullanici
+
+@{
+    ViewBag.Title = "Yeni Kayıt Paneli";
+    Layout = "~/Views/Shared/giriskayit.cshtml";
+}
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+
+    <table style="width:500px; margin:auto; color:darkblue; font-size:22px; margin-top:40px; height:300px;">
+        <tr>
+            <td style="">Kullanıcı Adı:</td>
+            <td>
+                @Html.EditorFor(model => model.kullanici_adi, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.kullanici_adi, "", new { @class = "text-danger" })
+            </td>
+        </tr>
+
+        <br />
+        <tr>
+            <td>Şifre:</td>
+            <td>
+
+                @Html.EditorFor(model => model.kul_sifre, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.kul_sifre, "", new { @class = "text-danger" })
+            </td>
+        </tr>z
+
+
+        <tr>
+            <td>Adınız:</td>
+            <td>
+                @Html.EditorFor(model => model.kul_isim, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.kul_isim, "", new { @class = "text-danger" })
+        </td>
+    </tr>
+
+    <tr>
+        <td>Soyadınız:</td>
+        <td>
+            @Html.EditorFor(model => model.kul_soyisim, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.kul_soyisim, "", new { @class = "text-danger" })
+    </td>
+</tr>
+
+<tr>
+    <td>E-Mail:</td>
+    <td>
+        @Html.EditorFor(model => model.kul_mail, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.kul_mail, "", new { @class = "text-danger" })
+    </td>
+</tr>
+<tr>
+    <td></td>
+    <td>
+        <input type="submit" value="Kaydet" class="btn btn-default" style="background-color:#0b1842; width:100px; margin-top:15px; float:right; height:30px; color:white; text-align:center;" />
+    </td>
+</tr>
+</table>
+
+}
+
+
